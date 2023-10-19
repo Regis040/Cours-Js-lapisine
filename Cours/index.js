@@ -60,20 +60,41 @@ const is30yearsOld = myAge == 30
 //     console.log(`Paul n'est pas adulte`)
 // }
 
-if(isAdult ) {
-    console.log(`Paul est adulte`)
-} else {
-    console.log(`Paul n'est pas adulte`)
+// if(isAdult ) {
+//     console.log(`Paul est adulte`)
+// } else {
+//     console.log(`Paul n'est pas adulte`)
+// }
+
+// if(is30yearsOld ) {
+//     console.log(`Paul a trente ans`)
+// } else {
+//     console.log(`Paul n'a pas trente ans`)
+// }
+
+
+const bigNb1 = 600
+const bigNb2 = 600
+
+// Ecrire la condition pour afficher le plus grand nombre
+
+
+if (bigNb1>bigNb2) {
+    console.log(bigNb1)
+} else if (bigNb1<bigNb2) {console.log(bigNb2)   
+} else if (bigNb1==bigNb2) {
+    console.log(bigNb1, bigNb2)
 }
 
-if(is30yearsOld ) {
-    console.log(`Paul a trente ans`)
+// const resultComparaison
+
+const resultComparaison = bigNb1 > bigNb2
+
+if (resultComparaison) {
+    console.log(bigNb1)
 } else {
-    console.log(`Paul n'a pas trente ans`)
+    console.log(bigNb2)
 }
-
-
-
 
 
 
