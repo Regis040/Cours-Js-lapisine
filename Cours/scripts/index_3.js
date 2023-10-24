@@ -155,16 +155,180 @@
                                     // // A laide d'une boucle for, trouver la valeur la plus grande dans qle tableau
 
 
-let numbers = [3, 5 , 12, 8, 1, 4]  
+// let numbers = [3, 5 , 12, 8, 1, 4]  
 
-let max = 0
+// let max = 0
 
-for (let i = 0; i < numbers.length; i += 1 ) {  
-        if(numbers[i] > max)     {
-            max = numbers [i]
+// for (let i = 0; i < numbers.length; i += 1 ) {  
+//         if(numbers[i] > max)     {
+//             max = numbers [i]
+//         }
+// }
+// console.log(max)
+
+                                    // //Nouvel exercice : afficher uniquement les nombres strictement supérieur à 4
+                                    // 5, 12 et 8
+
+// let numbers = [3, 5 , 12, 8, 1, 4]  
+
+
+// for (let n = 0; n < numbers.length; n += 1 ) {  
+//         if(numbers[n] > 4)     {
+//             console.log(`les nombres supérieurs à 4 sont : ${numbers[n]}` )
+//         }
+// }
+
+                                        // // autre exercice. avec un tableau vide que l'on remplit avec les données d'un autre tableau avec condition
+// let numbers = [3, 5 , 12, 8, 1, 4]  
+// let filtredNumbers = []  
+
+
+      
+// }
+
+                                // //Encapsuler le script précédent dans une fonction et y ajouter le paramètre limit
+// let numbers = [3, 5 , 12, 8, 1, 4]  
+
+// const arrayResult = filterArray(3)
+
+
+// function filterArray(limit) {
+//     let filtredNumbers = [] // on récupère dans un tableau vide "filterNumbers" les données sup à "limit" présent dans le tableau "numbers"
+
+//     for(let n = 0; n < numbers.length; n++) {
+//         if(numbers[n] > limit) {
+//             filtredNumbers.push(numbers[n])
+//         }
+//     }
+//     console.log(filtredNumbers)
+// }
+
+                                        //// Ecrire une boucle for pour afficher dans un nouveau tableau toutes les personnes malades (isSick == true)
+const persons = [{
+    name: `Pierre`,
+    hasCar: true,
+    hasBike: true,
+    isSick: true
+},
+{
+    name: `Melanie`,
+    hasCar: true,
+    hasBike: false,
+    isSick: false
+},
+{
+    name: `Paul`,
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+},
+{
+    name: `Sophie`,
+    hasCar: true,
+    hasBike: false,
+    isSick: false
+}]
+
+let sickPersons = []
+
+for (let i = 0; i < persons.lenght; i++) {
+        
+        if (persons[i].isSick) {
+            sickPersons.push(persons[i])
         }
+        console.log(sickPersons) // ne fonctionne pas
 }
-console.log(max)
 
-                                    // //
+
+
+  // Difficulté supplémentaire, encapsuler la boucle dans une fonction et passer le tableau en paramètre
+
+const persons_2 = [{
+    name: "Pierre",
+    hasCar: true,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Mélanie",
+    hasCar: true,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Paul",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Sophie",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Paul",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Nathalie",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Laurence",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Adèle",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Stéphane",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Théa",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Paul",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Léo",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}, {
+    name: "Romane",
+    hasCar: false,
+    hasBike: true,
+    isSick: true
+}, {
+    name: "Max",
+    hasCar: false,
+    hasBike: false,
+    isSick: false
+}]
+
+const result = findSickPeople(persons_2)
+console.log(result);
+
+function findSickPeople(arr) {
+    let sickPersons = []
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].isSick) {
+            sickPersons.push(arr[i])
+        }
+    }
+
+    return sickPersons;
+}
+
+
 
